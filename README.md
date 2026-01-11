@@ -45,18 +45,18 @@ Training is computationally expensive. It is recommended to use the provided **C
 ### 2. Watching the Bot Play (Local)
 Once you have a trained model file, place it in the project directory.
 
-🧠 Why No Minimax During Training?
+##🧠 Why No Minimax During Training?
 You might wonder: If we use Minimax to play, why not use it to train?
 
-Speed: Training requires millions of decisions. Adding a search (checking 900+ positions per move) would slow training down by ~1000x.
+**Speed**: Training requires millions of decisions. Adding a search (checking 900+ positions per move) would slow training down by ~1000x.
 
-Generalization: We want the Neural Network to develop "Intuition" (Pattern Recognition). By forcing it to evaluate static boards without calculation, it learns to recognize dangerous patterns (like open files or pins) instantly.
+**Generalization**: We want the Neural Network to develop "Intuition" (Pattern Recognition). By forcing it to evaluate static boards without calculation, it learns to recognize dangerous patterns (like open files or pins) instantly.
 
-🤝 Contributing
+##🤝 Contributing
 Feel free to fork this project! Ideas for improvements:
 
-Implement MCTS (Monte Carlo Tree Search) like AlphaZero.
+**Implement MCTS (Monte Carlo Tree Search) like AlphaZero.
 
-Add a "Policy Head" to the network to predict moves, not just scores.
+**Add a "Policy Head" to the network to predict moves, not just scores.
 
-Create a "Play vs Human" mode (currently it plays itself).
+**Create a "Play vs Human" mode (currently it plays itself).
