@@ -1,3 +1,13 @@
+# file to view your progress on your local computer
+
+# usage - 
+
+## To run with a specific model: python view_chess_minimax.py chess_mlp_hybrid.pth
+
+## To run with the default: python view_chess_minimax.py (Defaults to chess_mlp_hybrid.pth)
+
+
+
 import pygame
 import chess
 import torch
@@ -181,4 +191,5 @@ def main():
         time.sleep(3) 
 
 if __name__ == "__main__":
+
     main()
